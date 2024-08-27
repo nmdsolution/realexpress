@@ -16,11 +16,8 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class DepenseResource extends Resource
 {
     protected static ?string $model = Depense::class;
-    protected static ?string $navigationLabel = 'Depense de lAgences';
-    public static function getNavigationBadge(): ?string
-    {
-        return static::getModel()::count();
-    }
+    //protected static ?string $navigationLabel = 'Depense de lAgences';
+
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form
