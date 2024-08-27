@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('expeditions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('bus_id')->constrained('buses')->cascadeOnDelete(); // Corrected foreign key
+            $table->string('bus_id')->constrained('buses')->cascadeOnDelete(); // Corrected foreign key
             $table->string('from_location')->constrained('locations')->cascadeOnDelete();
             $table->string('to_location');
             $table->string('ref_no')->unique();

@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel
 
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('sync:database')->everySecond();
+        $schedule->command('sync:database1')->everySecond();
     }
 
 }

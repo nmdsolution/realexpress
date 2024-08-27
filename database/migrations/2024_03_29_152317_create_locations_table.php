@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('point_darret')->nullable();
             $table->string('ville')->nullable();
             $table->string('quartier')->nullable();
-            $table->enum('status',['diponible','fermer']);
+            $table->string('status')->nullable();
 
             $table->timestamps();
         });
